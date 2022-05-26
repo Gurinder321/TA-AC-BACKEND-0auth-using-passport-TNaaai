@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<form action="/register" method="POST">
+  <h1>Register</h1>
+
+  <input type="text" name="name" placeholder="Full Name" />
+  <input type="email" name="email" placeholder="Email" />
+  <input type="password" name="password" placeholder="Password" />
+  <input type="submit" value="Submit" />
+</form>
+
+<p>Already Have An Account? <a href="/register/login">Login</a></p>
+<p>Sign In Using Google <a href="/register/google">Login</a></p>
+<p>Sign In Using Github <a href="/register/github">Login</a></p>
+
+<% include partials/footer %>
